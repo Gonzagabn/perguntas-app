@@ -6,10 +6,7 @@ Aplicativo de perguntas que retorna um resultado textual de acordo com as respos
 
 ## Funções Implementadas e Aprendizados:
 
-- Construção de widgets;
+- Criação de widgets;
 - StatefulWidget e StatelessWidget;  
-- ElevatedButton;
-- 
--
--
--
+- Comunicação direta e indireta entre componentes;
+- Botões do tipo ElevatedButton.
