@@ -23,9 +23,9 @@ class _PerguntaAppState extends State<PerguntaApp> {
     {
       'texto': 'Qual é o seu animal favorito?',
       'respostas': [
-        {'texto': 'Águia (10)', 'pontuacao': 10},
-        {'texto': 'Pinguim (2)', 'pontuacao': 2},
-        {'texto': 'Tigre (5)', 'pontuacao': 5},
+        {'texto': 'Arara Azul (10)', 'pontuacao': 10},
+        {'texto': 'Jacaré (2)', 'pontuacao': 2},
+        {'texto': 'Onça (5)', 'pontuacao': 5},
         {'texto': 'Capivara (1)', 'pontuacao': 1},
       ],
     },
@@ -63,20 +63,22 @@ class _PerguntaAppState extends State<PerguntaApp> {
   @override //O @override é uma anotação que sobrescreve o método build da classe mãe StateLessWidget
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-            appBar: AppBar(
-              title: Text('Perguntas'),
-            ),
-            body: temPerguntaSelecionada
-                ? Questionario(
-                    perguntas: _perguntas,
-                    perguntaSelecionada: _perguntaSelecionada,
-                    quandoResponder: _responder,
-                  )
-                : Resultado(
-                    _pontuacaoTotal,
-                    _reiniciarQuestionario,
-                  )));
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Perguntas'),
+        ),
+        body: temPerguntaSelecionada
+            ? Questionario(
+                perguntas: _perguntas,
+                perguntaSelecionada: _perguntaSelecionada,
+                quandoResponder: _responder,
+              )
+            : Resultado(
+                _pontuacaoTotal,
+                _reiniciarQuestionario,
+              ),
+      ),
+    );
   }
 }
 

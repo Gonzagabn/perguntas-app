@@ -7,21 +7,21 @@ class Resultado extends StatelessWidget {
   Resultado(this.pontuacao, this.quandoReiniciarQuestionario);
 
   String get fraseResultado {
-    if (pontuacao < 8) {
-      return 'Parabéns!';
-    } else if (pontuacao < 12) {
-      return 'Você é bom!';
-    } else if (pontuacao < 16) {
-      return 'Impressionante!';
+    if (pontuacao < 9) {
+      return 'Parabéns! (score < 9)';
+    } else if (pontuacao < 21) {
+      return 'Você é bom! (8 < score < 21)';
+    } else if (pontuacao < 30) {
+      return 'Muito bom! (20 < score < 30)';
     } else {
-      return 'Nível Ninja!';
+      return 'Excelente! (score = 30)';
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Center(
           child: Text(
@@ -33,11 +33,11 @@ class Resultado extends StatelessWidget {
           onPressed: quandoReiniciarQuestionario,
           child: Text('Reiniciar?'),
           style: ElevatedButton.styleFrom(
-              primary: Colors.teal,
-              textStyle: TextStyle(
-                fontSize: 28,
-                color: Colors.black,
-              )),
+            primary: Colors.teal,
+            textStyle: TextStyle(
+              fontSize: 28,
+            ),
+          ),
         ),
       ],
     );
