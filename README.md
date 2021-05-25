@@ -4,6 +4,8 @@
 
 Aplicativo de perguntas que retorna um resultado textual de acordo com as respostas do usuário.
 
+Projetado para fins de estudo pela Cod3r - https://www.udemy.com/course/curso-flutter/
+
 ![img](https://i.imgur.com/5bEELY6.png)
 
 ## Funções Implementadas e Aprendizados:
