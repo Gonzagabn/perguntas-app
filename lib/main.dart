@@ -14,28 +14,28 @@ class _PerguntaAppState extends State<PerguntaApp> {
     {
       'texto': 'Qual é a sua cor favorita?',
       'respostas': [
-        {'texto': 'Cinza', 'pontuacao': 2},
-        {'texto': 'Preto', 'pontuacao': 10},
-        {'texto': 'Azul', 'pontuacao': 5},
-        {'texto': 'Branco', 'pontuacao': 1},
+        {'texto': 'Cinza (2)', 'pontuacao': 2},
+        {'texto': 'Preto (10)', 'pontuacao': 10},
+        {'texto': 'Azul (5)', 'pontuacao': 5},
+        {'texto': 'Branco (1)', 'pontuacao': 1},
       ],
     },
     {
       'texto': 'Qual é o seu animal favorito?',
       'respostas': [
-        {'texto': 'Águia', 'pontuacao': 10},
-        {'texto': 'Pinguim', 'pontuacao': 2},
-        {'texto': 'Tigre', 'pontuacao': 5},
-        {'texto': 'Capivara', 'pontuacao': 1},
+        {'texto': 'Águia (10)', 'pontuacao': 10},
+        {'texto': 'Pinguim (2)', 'pontuacao': 2},
+        {'texto': 'Tigre (5)', 'pontuacao': 5},
+        {'texto': 'Capivara (1)', 'pontuacao': 1},
       ],
     },
     {
       'texto': 'Qual é a sua cidade favorita?',
       'respostas': [
-        {'texto': 'Campo Grande', 'pontuacao': 10},
-        {'texto': 'Itabira', 'pontuacao': 2},
-        {'texto': 'Suzano', 'pontuacao': 5},
-        {'texto': 'São Paulo', 'pontuacao': 1},
+        {'texto': 'Campo Grande (10)', 'pontuacao': 10},
+        {'texto': 'Itabira (2)', 'pontuacao': 2},
+        {'texto': 'Suzano (5)', 'pontuacao': 5},
+        {'texto': 'São Paulo (1)', 'pontuacao': 1},
       ],
     }
   ];
