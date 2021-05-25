@@ -4,6 +4,8 @@
 
 Aplicativo de perguntas que retorna um resultado textual de acordo com as respostas do usuário.
 
+![img](https://i.imgur.com/5bEELY6.png)
+
 ## Funções Implementadas e Aprendizados:
 
 - Criação de widgets;
